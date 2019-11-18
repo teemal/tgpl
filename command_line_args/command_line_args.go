@@ -19,6 +19,8 @@ func main() {
 	//Go doesn't allow unused variables
 	//since we are getting an index and index value from range os.Args
 	//we can just pass the index into a blank identifier(_) since it won't be used
+
+	//^^ changed blank identifier to variable for exercise
 	for i, arg := range os.Args[1:] {
 		t = " index: " + strconv.Itoa(i)
 		fmt.Println(arg + t)
